@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #212529;
+  color: #c7c7c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  height: 260px;
+  width: 440px;
+}
+
+#container div {
+  height: 50%;
+  width: 100%;
+}
+
+.white {
+  background: #ddd;
+}
+
+.red {
+  background: #ba1c1c;
+}

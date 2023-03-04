@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #212529;
+  color: #c7c7c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  height: 260px;
+  width: 440px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.star {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  clip-path: polygon(50% 5%, 61% 40%, 98% 40%, 68% 62%, 79% 96%, 50% 75%, 21% 96%, 32% 62%, 2% 40%, 39% 40%);
+  background: #ddd;
+}
+
+.yellow, .green, .red {
+  height: 33.3%;
+  width: 100%;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.green {
+  background: green;
+}
+
+.red {
+  background: red;
+}

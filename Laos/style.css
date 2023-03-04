@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #212529;
+  color: #c7c7c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  height: 260px;
+  width: 440px;
+  position: relative;
+}
+
+.red {
+  height: 26%;
+  width: 100%;
+  background: #ba1c1c;
+}
+
+.blue {
+  height: 48%;
+  width: 100%;
+  background: #081373;
+}
+
+.circle {
+  height: 120px;
+  width: 120px;
+  background: #ddd;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 60px);
+  left: calc(50% - 60px);
+}

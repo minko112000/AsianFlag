@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #212529;
+  color: #c7c7c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  height: 260px;
+  width: 440px;
+  background: #ba1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star {
+  height: 200px;
+  width: 200px;
+  clip-path: polygon(50% 5%, 61% 40%, 98% 40%, 68% 62%, 79% 96%, 50% 75%, 21% 96%, 32% 62%, 2% 40%, 39% 40%);
+  background: yellow;
+}

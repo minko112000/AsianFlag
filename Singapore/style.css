@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #212529;
+  color: #c7c7c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  height: 260px;
+  width: 440px;
+}
+
+.red, .white {
+  height: 50%;
+  width: 100%;
+}
+
+.red {
+  background: #ba1c1c;
+}
+
+.white {
+  background: #ddd;
+}
+
+.box {
+  height: 90%;
+  width: 80%;
+  position: relative;
+  top: 5%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.box .moon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: #ddd;
+  position: relative;
+}
+
+.moon:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  left: 20px;
+  background: #ba1c1c;
+}
+
+.box .star-box {
+  height: 60px;
+  width: 60px;
+  background: transparent;
+  position: relative;
+  top: -3px;
+  left: -60px;
+  border-radius: 50%;
+}
+
+.star-box .star {
+  height: 12px;
+  width: 12px;
+  background: #ddd;
+  position: absolute;
+  clip-path: polygon(50% 5%, 61% 40%, 98% 40%, 68% 62%, 79% 96%, 50% 75%, 21% 96%, 32% 62%, 2% 40%, 39% 40%);
+}
+
+.star-box .star:first-child {
+  top: 0;
+  left: calc(50% - 6px);
+}
+
+.star-box .star:nth-child(2),
+.star-box .star:nth-child(3) {
+  top: calc(50% - 6px);
+}
+
+.star-box .star:nth-child(2) {
+  left: 0;
+}
+
+.star-box .star:nth-child(3) {
+  right: 0;
+}
+
+.star-box .star:nth-child(4),
+.star-box .star:last-child {
+  bottom: 0;
+}
+
+.star-box .star:nth-child(4) {
+  left: 12px;
+}
+
+.star-box .star:last-child {
+  right: 12px;
+}
